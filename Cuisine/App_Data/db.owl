@@ -1,0 +1,367 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/du/ontologies/2021/1/cuisine"
+     xml:base="http://www.semanticweb.org/du/ontologies/2021/1/cuisine"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:cuisine="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coNguyenLieu -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coNguyenLieu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#ThanhPhan"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#NguyenLieu"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coThanhPhan -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coThanhPhan">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#MonAn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#ThanhPhan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#thuocKhuVuc -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#thuocKhuVuc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#MonAn"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#KhuVuc"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coAnh -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coAnh">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#MonAn"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coDVT -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coDVT">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#ThanhPhan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#MonAn"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#long"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coMoTa -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coMoTa">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#MonAn"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coSoLuong -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coSoLuong">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#ThanhPhan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coTenKhuVuc -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coTenKhuVuc">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#KhuVuc"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coTenMonAn -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coTenMonAn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#MonAn"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coTenNguyenLieu -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#coTenNguyenLieu">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#NguyenLieu"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#laMonChay -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#laMonChay">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#MonAn"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#KhuVuc -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#KhuVuc"/>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#MonAn -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#MonAn"/>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#NguyenLieu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#NguyenLieu"/>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#ThanhPhan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#ThanhPhan"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Combodia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Combodia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#KhuVuc"/>
+        <cuisine:coTenKhuVuc>Campuchia</cuisine:coTenKhuVuc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#EXSO_TP_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#EXSO_TP_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#ThanhPhan"/>
+        <cuisine:coNguyenLieu rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Ech"/>
+        <cuisine:coDVT>gram</cuisine:coDVT>
+        <cuisine:coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#float">500.0</cuisine:coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Ech -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Ech">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#NguyenLieu"/>
+        <cuisine:coTenNguyenLieu>Ếch</cuisine:coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#EchXaoSaOt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#EchXaoSaOt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#MonAn"/>
+        <cuisine:coThanhPhan rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#EXSO_TP_1"/>
+        <cuisine:thuocKhuVuc rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#VietNam"/>
+        <cuisine:coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2020/12/ech-xao-xa-ot.jpg</cuisine:coAnh>
+        <cuisine:coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1</cuisine:coID>
+        <cuisine:coMoTa>Món ăn kích thích vị giác người dùng với thịt ếch chắc ngọt hòa quyện chặt với mùi thơm của sả và vị cay nồng của ớt</cuisine:coMoTa>
+        <cuisine:coTenMonAn>Ếch xào sả ớt</cuisine:coTenMonAn>
+        <cuisine:laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</cuisine:laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#GHH_TP_1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#GHH_TP_1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#ThanhPhan"/>
+        <cuisine:coNguyenLieu rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Ga"/>
+        <cuisine:coDVT>Kg</cuisine:coDVT>
+        <cuisine:coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.2</cuisine:coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#GHH_TP_2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#GHH_TP_2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#ThanhPhan"/>
+        <cuisine:coNguyenLieu rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#HanhLa"/>
+        <cuisine:coDVT>Cọng</cuisine:coDVT>
+        <cuisine:coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#float">10.0</cuisine:coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#GHH_TP_3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#GHH_TP_3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#ThanhPhan"/>
+        <cuisine:coNguyenLieu rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Gung"/>
+        <cuisine:coDVT>Nhánh nhỏ</cuisine:coDVT>
+        <cuisine:coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</cuisine:coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Ga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Ga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#NguyenLieu"/>
+        <cuisine:coTenNguyenLieu>Gà</cuisine:coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#GaHapHanh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#GaHapHanh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#MonAn"/>
+        <cuisine:coThanhPhan rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#GHH_TP_1"/>
+        <cuisine:coThanhPhan rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#GHH_TP_2"/>
+        <cuisine:coThanhPhan rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#GHH_TP_3"/>
+        <cuisine:thuocKhuVuc rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#VietNam"/>
+        <cuisine:coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2021/01/ga-hap-hanh.jpg</cuisine:coAnh>
+        <cuisine:coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2</cuisine:coID>
+        <cuisine:coMoTa>Gà hấp hành đơn giản mà thơm ngon</cuisine:coMoTa>
+        <cuisine:coTenMonAn>Gà hấp hành</cuisine:coTenMonAn>
+        <cuisine:laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</cuisine:laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Gung -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Gung">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#NguyenLieu"/>
+        <cuisine:coTenNguyenLieu>Gừng</cuisine:coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#HanhLa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#HanhLa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#NguyenLieu"/>
+        <cuisine:coTenNguyenLieu>Hành lá</cuisine:coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Lao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Lao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#KhuVuc"/>
+        <cuisine:coTenKhuVuc>Lào</cuisine:coTenKhuVuc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#OtHiem -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#OtHiem">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#NguyenLieu"/>
+        <cuisine:coTenNguyenLieu>Ớt hiểm</cuisine:coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Sa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Sa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#NguyenLieu"/>
+        <cuisine:coTenNguyenLieu>Sả</cuisine:coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#ThaiLan -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#ThaiLan">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#KhuVuc"/>
+        <cuisine:coTenKhuVuc>Thái Lan</cuisine:coTenKhuVuc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Toi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#Toi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#NguyenLieu"/>
+        <cuisine:coTenNguyenLieu>Tỏi</cuisine:coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/du/ontologies/2021/1/cuisine#VietNam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#VietNam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/du/ontologies/2021/1/cuisine#KhuVuc"/>
+        <cuisine:coTenKhuVuc>Việt Nam</cuisine:coTenKhuVuc>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

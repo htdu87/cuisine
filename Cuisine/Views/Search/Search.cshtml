@@ -1,0 +1,84 @@
+﻿@using Cuisine.Models;
+
+@{
+    ViewBag.Title = "Kết quả tìm kiếm";
+    Layout = "~/Views/Shared/_LayoutCuisine.cshtml";
+}
+
+@section styles {
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+}
+
+@section scripts {
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('.select2').select2();
+        });
+    </script>
+}
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container" style="padding-top:7px">
+        <div class="navbar-header">
+            <a href=".">
+                <img src="~/Content/Images/cooking-logo.png" width="50" title="Cooking logo" alt="Cooking logo" />
+            </a> 
+        </div>
+        <div class="navbar-collapse collapse" style="padding-left:0px; padding-right:0px">
+            <ul class="nav navbar-nav" style="width:80%; margin-left:20px">
+                <li style="width:100%">
+                    <form class="form-inline" method="post" action="">
+                        <div class="form-group" style="width:70%">
+                            <select name="keyword" class="form-control select2">
+                                @foreach (string key in ViewBag.dsKhuVuc.Keys)
+                                {
+                                    <option value="@key" @(ViewBag.keyword == key ? "selected": "")>@ViewBag.dsKhuVuc[key]</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="btn-group">
+                            <button type="submit" class="btn btn-default">Tìm</button>
+                            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <span class="caret"></span>
+                                <span class="sr-only">Toggle Dropdown</span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Món chay</a></li>
+                            </ul>
+                        </div>
+                        
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    @foreach (Dish d in ViewBag.searchResult)
+    {
+        <div class="media">
+            <div class="media-left">
+                <a href="detail?id=@d.Id">
+                    <img src="@d.Picture" class="media-object" width="64" />
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">
+                    <a href="detail?id=@d.Id">@d.Name</a>
+                    @if (d.Chay)
+                    {
+                        <span class="loai-mon mon-chay">Món chay</span>
+                    }
+                    else
+                    {
+                        <span class="loai-mon mon-man">Món mặn</span>
+                    }
+                </h4>
+                @d.Desc
+            </div>
+        </div>
+        <hr/>
+    }
+</div>

@@ -1,0 +1,54 @@
+﻿@using Cuisine.Models;
+
+@{
+    ViewBag.Title = ViewBag.dish.Name;
+    Layout = "~/Views/Shared/_LayoutCuisine.cshtml";
+}
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container" style="padding-top:7px">
+        <div class="navbar-header">
+            <a href=".">
+                <img src="~/Content/Images/cooking-logo.png" width="50" title="Cooking logo" alt="Cooking logo" />
+            </a>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-md-5">
+            <img src="@ViewBag.dish.Picture" alt="@ViewBag.dish.Name" title="@ViewBag.dish.Name" class="img-responsive"/>
+        </div>
+        <div class="col-md-7">
+            <h2 style="margin-bottom:0px">@ViewBag.dish.Name</h2>
+            @if (@ViewBag.dish.Chay)
+            {
+                <span class="loai-mon mon-chay">Món chay</span>
+            }
+            else
+            {
+                <span class="loai-mon mon-man">Món mặn</span>
+            }
+            <p style="margin-top:3px">@ViewBag.dish.Desc</p>
+            <h3>Công thức món ăn</h3>
+            <table class="table table-hover">
+                <tbody>
+                    @foreach(ThanhPhan tp in ViewBag.congThuc)
+                    {
+                        <tr>
+                            <td>@tp.Ten</td>
+                            <td>@tp.SoLuong</td>
+                            <td>@tp.DVT</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12" style="margin-top:15px">
+            <a href="javascript:window.history.back()" role="button" class="btn btn-default">&nbsp;&nbsp;Trở về&nbsp;&nbsp;</a>
+        </div>
+    </div>
+</div>
+
