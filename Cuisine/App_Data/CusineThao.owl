@@ -187,151 +187,1020 @@
     
 
 
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Ca -->
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Chinese -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Ca">
-        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
-        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cá lốc</coTenNguyenLieu>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Compodia -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Compodia">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Chinese">
         <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#KhuVuc"/>
-        <coTenKhuVuc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Campuchia</coTenKhuVuc>
+        <coTenKhuVuc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trung Hoa</coTenKhuVuc>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Cua -->
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Europe -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Cua">
-        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
-        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cua rạch</coTenNguyenLieu>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Indian -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Indian">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Europe">
         <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#KhuVuc"/>
-        <coTenKhuVuc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Indonéia</coTenKhuVuc>
+        <coTenKhuVuc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Châu Âu</coTenKhuVuc>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Lao -->
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Japanese -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Lao">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Japanese">
         <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#KhuVuc"/>
-        <coTenKhuVuc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lào</coTenKhuVuc>
+        <coTenKhuVuc>Nhật Bản</coTenKhuVuc>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Lau -->
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Korean -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Lau">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Korean">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#KhuVuc"/>
+        <coTenKhuVuc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hàn Quốc</coTenKhuVuc>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonBoBitTet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonBoBitTet">
         <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
-        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_2"/>
-        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Vietnamese"/>
-        <coAnh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://icdn.dantri.com.vn/k:cf2bc374ea/2015/12/13/lau-kim-chi-1449976033308/ba-mon-lau-am-anh-nhung-nguoi-khong-an-duoc-cay.jpg</coAnh>
-        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">123</coID>
-        <coMoTa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dùng cho gia đình</coMoTa>
-        <coTenMonAn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lẩuu thái</coTenMonAn>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Europe"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2016/03/bo-bit-tet.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">27</coID>
+        <coMoTa>Vốn là món ăn có xuất xứ từ châu Âu, đến nay, bò bít tết đã du nhập vào Việt Nam và nhận được sự đón nhận của rất nhiều người. Thậm chí, đã có không ít người tìm kiếm công thức để có thể tự chế biến món ăn này tại nhà thay vì ra tiệm thưởng thức.
+
+Thực hiện được bò bít tết không khó, tuy nhiên không phải ai cũng có thể tạo nên món ăn đạt hương vị chuẩn. Vì thế, trước khi chế biến món ăn này, bạn cần tìm hiểu kỹ càng các bí quyết thực hiện từ cách chọn thịt, ướp, điều chỉnh lửa, chuẩn bị đồ ăn kèm… Bài viết này chia sẻ công thức cùng một số lưu ý trong quá trình thực hiện của Dạy nấu ăn Gia đình, Mở quán ®™ nhằm giúp các bạn dễ dàng hơn trong việc đưa món Âu về gian bếp nhà.</coMoTa>
+        <coTenMonAn>BÒ BÍT TẾT</coTenMonAn>
         <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Muc -->
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonBoKho -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Muc">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonBoKho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_NuocDua"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho2"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho3"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho4"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho5"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Vietnamese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2018/04/bo-kho-nuoc-dua-tuoi.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">4</coID>
+        <coMoTa>Bò kho nước dừa tươi là món ăn chứa nhiều dinh dưỡng, dễ làm tại nhà. Với công thức đơn giản này, bạn có thể tự tin trổ tài, đem đến một bữa ăn hấp dẫn cho gia đình. Hãy cùng Dạy nấu ăn Gia đình, Mở quán ®™ vào bếp và thực hiện ngay, bạn nhé!
+
+Thịt bò là nguyên liệu ngon, rất phổ biến để dùng làm các món ăn tại các gia đình. Từ thịt bò, có thể chế biến được rất nhiều món ăn khác nhau. Trong đó, món bò kho nước cốt dừa là món ăn vừa ngon, bổ, lại có thể dùng kèm bánh mì, bún rất hợp. Dưới đây là công thức để bạn có thể vào bếp và thực hiện món ăn này.</coMoTa>
+        <coTenMonAn>BÒ KHO NƯỚC DỪA TƯƠI</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonBunBoHue -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonBunBoHue">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GiaViBunBo"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon4"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho2"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_RauBunBo"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Vietnamese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2019/05/bun-bo-hue.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">11</coID>
+        <coMoTa>Ẩm thực cố đô Huế nổi tiếng với hương vị hài hòa giữa cay, chua, mặn và ngọt - và Bún bò Huế là một ví dụ tuyệt vời. Nước dùng được làm từ nước xương bò ninh với sả và nước mắm. Bát bún được phục vụ với thịt bò, thịt lợn, sợi bún to và dày hơn của miền Bắc và rất nhiều loại rau gia vị. Đặc biệt, người Huế rất thích ăn cay, vì vậy, ớt và tiêu là 2 thứ không thể thiếu để làm nên hương vị đặc biệt của món ăn này</coMoTa>
+        <coTenMonAn>BÚN BÒ HUẾ</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonBunCha -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonBunCha">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_CaBaSa"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaCa"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ComTam2"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon4"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho4"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho5"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Vietnamese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2020/07/bun-cha-ca-da-nang.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">5</coID>
+        <coMoTa>Bạn đang tìm một cách nấu bún chả cá Đà Nẵng chuẩn vị nhưng trên mạng lại có hàng ngàn công thức chế biến khác nhau khiến bạn lúng túng. Nếu muốn có được thành phẩm với nước lèo ngọt thanh, vị chua nhẹ, chả cá dai thơm, đậm đà hương vị miền biển, bạn hãy tham khảo công thức nấu bún chả cá Đà Nẵng sau của Dạy nấu ăn Gia đình, Mở quán ®™.
+ên cạnh các món ngon như mì Quảng, gỏi cá Nam Ô, bánh tráng thịt heo, bê thui Cầu Mống, ốc hút hay mít trộn thì bún chả cá là một đặc sản không thể bỏ qua khi đến Đà Nẵng. Bún chả cá ngon, không tanh mà lại có hương thơm ngào ngạt cùng với vị ngọt thanh của rau củ quả và vị đậm đà của nước lèo khiến người ăn có những trải nghiệm thú vị không thể nào quên. Không cần đến Đà Nẵng, bạn vẫn có ngay một tô bún chả cá thơm ngon, chuẩn vị chỉ với vài bước đơn giản.</coMoTa>
+        <coTenMonAn>BÚN CHẢ CÁ ĐÀ NẴNG</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonBunMam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonBunMam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_BunMam1"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio1"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio2"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Muc"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho4"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho5"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Vietnamese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2018/08/bun-mam-mien-tay-1.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">7</coID>
+        <coMoTa>Món ăn này được người dân địa phương biến tấu với nhiều nguyên liệu khác nhau, tùy theo từng vùng miền, nhưng những thành phần dưới đây là không thể thiếu: bún gạo, hải sản, thịt lợn, một số loại rau gia vị và đặc biệt là mắm nêm.</coMoTa>
+        <coTenMonAn>BÚN MẮM THƠM NGON CHUẨN VỊ</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonCHIPOTLE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonCHIPOTLE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Europe"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2015/10/uc-bo-chipotle-xong-khoi-om-bia.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">26</coID>
+        <coMoTa>Với thành phần chính là thịt ức bò, ít chất béo, bò chipotle xông khói ôm bia cung cấp năng lượng cho cơ thể với nguồn protein chất lượng thay vì chất béo, cholesterol. Công thức làm Ức bò chipotle om bia khá phức tạp với nhiều nguyên liệu, gia vị khác nhau, nhưng hương vị lại hòa quyện dễ chịu. Có thể khó khăn với bạn về việc tìm mua nguyên liệu, tuy nhiên bạn cũng có thể tìm những nguyên liệu cần thiết để học nấu ăn món Âu – Mỹ tại các cửa hàng thực phẩm nhập nhẩu.
+
+Bây giờ cùng tìm hiểu công thức làm Bò chipotle xông khói om bia nhé!</coMoTa>
+        <coTenMonAn>ỨC BÒ CHIPOTLE XÔNG KHÓI OM BIA</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonChaGio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonChaGio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio1"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio2"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio3"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio4"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ComTam2"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Vietnamese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2017/02/cha-gio-tom-thit.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">6</coID>
+        <coMoTa>Chả giò tôm thịt là món ăn nổi tiếng Việt Nam, nhất là vào ngày Tết, món ăn này lúc nào có mặt trong mâm cỗ đãi khách khứa. Chả giò giòn rụm, vị tôm ngọt quyện với thịt đậm đà, chút bùi bùi của khoai lang, khoai môn khiến món ăn thêm thú vị. Hãy cùng Nhóm T2D học cách làm món chả ngon lành này nhé!
+
+Trong ký ức của nhiều người, chả giò đã trở thành một món ăn thân thương và gẫn gũi. Không quá cầu kỳ trong cách làm cũng không đòi hỏi nhiều kỹ thuật khó, chả giò tôm thịt là một món ăn mà bạn có thể làm ngay tại nhà.</coMoTa>
+        <coTenMonAn>CHẢ GIÒ TÔM THỊT</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonChaTomTQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonChaTomTQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Chinese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2016/08/cha-tom-hap-bong-cai.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">14</coID>
+        <coMoTa>Chả tôm hấp bông cải kiểu Trung Hoa là một món ăn khá hấp dẫn, hương vị ngọt lịm, bùi bùi của tôm ăn kèm với bông cải xanh giòn thơm.
+
+Cách làm Chả tôm hấp bông cải kiểu Trung Hoa nghe có vẻ hơi phức tạp nhưng khi đã bắt tay vào làm thì lại không hề khó một chút nào cả, chính vì thế Dạy nấu ăn Gia đình, Mở quán ®™ hôm nãy sẽ giới thiệu đến với các bạn cách làm món này đấy.</coMoTa>
+        <coTenMonAn>CHẢ TÔM HẤP BÔNG CẢI KIỂU TRUNG HOA</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonComTam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonComTam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ComTam1"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ComTam2"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ComTam3"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho4"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho5"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Vietnamese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2015/06/com-tam-suon-bi-cha.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">9</coID>
+        <coMoTa>Cơm tấm sườn bì chả là món ăn nổi tiếng Việt Nam được rất nhiều người yêu thích. Để làm món cơm hấp dẫn này, bạn cần có một số bí quyết mà Nhóm T2D sẽ chia sẻ với bạn trong hướng dẫn chi tiết dưới đây.
+
+Làm món ăn này vào dịp cuối tuần thì thế nào nhỉ? Cơm Tấm là một món ăn rất hấp dẫn và thơm ngon, chỉ cần bạn thực hiện theo công thức dưới đây là sẽ có ngay một món ngon để thưởng thức và chiêu đãi mọi người.</coMoTa>
+        <coTenMonAn>CƠM TẤM SƯỜN BÌ CHẢ NƯỚNG</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonGaHamThuocBac -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonGaHamThuocBac">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Chinese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2018/06/ga-ac-tiem-thuoc-bac.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">12</coID>
+        <coMoTa>Gà ác tiềm thuốc Bắc là món ăn vừa thơm ngon, vừa cung cấp nhiều dưỡng chất tốt cho cơ thể, đặc biệt là với phụ nữ mang thai, người cao tuổi và những ai mới khỏi bệnh. Chính vì thế, nhiều người đã săn tìm cách làm gà ác tiềm thuốc Bắc để tẩm bổ cho bản thân và gia đình.
+Gà ác tiềm thuốc Bắc là sự kết hợp hoàn hảo giữ thịt gà bổ dưỡng cùng các vị thuốc Bắc và hạt sen, tạo nên một món ăn có hương vị đặc trưng và khác biệt. Không chỉ cung cấp dưỡng chất cần thiết cho cơ thể, món ăn này còn rất tốt cho sự phát triển của thai nhi, giúp mẹ bầu cải thiện giấc ngủ. Vì vậy mà bạn đừng bỏ qua cách làm gà ác tiềm thuốc Bắc thơm ngon, độc đáo do Dạy Nấu Ăn chia sẻ dưới đây.</coMoTa>
+        <coTenMonAn>GÀ HẦM THUỐC BẮC</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonGaKATSU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonGaKATSU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Japanese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2016/07/ga-katsu-nhat-ban.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">19</coID>
+        <coMoTa>Món gà Katsu là món ăn thường được dùng kèm với cơm nóng, bắp cải thái sợi và xốt Tonkatsu. Cách làm món gà Katsu không khó, với những nguyên liệu đơn giản và khoảng 30 phút thôi là bạn đã có thể làm được món ăn này. Hãy cùng Dạy nấu ăn Gia đình, Mở quán ®™ học nấu món Nhật thông dụng này để cả nhà cùng thưởng thức nhé!
+
+Gà Katsu là món Nhật hấp dẫn và rất được yêu thích tại đây. Món ăn sẽ giúp bạn cảm nhận trọn vẹn hương vị tinh tế của ẩm thực Nhật Bản. Thịt dai ngọt, vàng giòn chấm kèm với nước xốt sánh sệt. Đây chắc chắn sẽ là món ăn giúp bạn đổi vị cho bữa cơm gia đình thêm ngon miệng.</coMoTa>
+        <coTenMonAn>GÀ KATSU NHẬT BẢN</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonGaTanSamHQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonGaTanSamHQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Korean"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2018/07/ga-tan-sam-han-quoc.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">23</coID>
+        <coMoTa>Là món ăn có xuất xứ từ xứ sở kim chi, gà tần sâm Hàn Quốc, ngày càng được người dùng trên toàn thế giới yêu thích. Khi mới du nhập vào Việt Nam, món ăn này đã làm chao đảo người ăn nước ta. Nếu cũng là tín đồ của món ăn xứ sở kim chi, bạn không nên bỏ qua công thức chế biến món ăn này ngay tại nhà.
+
+Món ngon từ gà này được người Hàn sử dụng vào ngày hè nắng vì nó có tính mát, bồi bổ cơ thể tốt. Rất nhiều người đã học cách nấu món hàn quốc này tại này. Tuy nhiên, cách nấu gà hầm sâm cầu kỳ, đòi hỏi người nấu phải thực hiện đúng theo từng công đoạn đã khiến không ít trong số họ thất bại. Bạn có thể tham khảo công thức chế biến dưới đây để chế biến được món ăn đúng chuẩn vị Hàn nhé!</coMoTa>
+        <coTenMonAn>GÀ TẦN SÂM HÀN QUỐC</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonGoiCuon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonGoiCuon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon1"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon2"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon3"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon4"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Vietnamese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2019/01/goi-cuon.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">3</coID>
+        <coMoTa>Nhiều người tìm hiểu và bỏ túi cách làm gỏi cuốn tôm thịt để có thể thay đổi thực đơn gia đình vào những dịp cuối tuần. Đặc biệt, công thức thực hiện món ăn này tương đối đơn giản, bạn có thể tiết kiệm được nhiều thời gian hoàn thiện mâm cơm chỉn chu hơn.
+
+Từng được CNN bình chọn vào danh sách “50 món ăn ngon nhất thế giới” năm 2011, gỏi cuốn được nhiều người biết đến và ưa chuộng sử dụng. Chỉ cần bạn chuẩn bị đầy đủ một số loại nguyên liệu cần thiết và thực hiện vài bước đơn giản là đã có thể thu về thành phẩm như ý muốn. Bạn đã sẵn sàng tham khảo công thức gỏi cuốn dưới đây chưa?</coMoTa>
+        <coTenMonAn>GỎI CUỐN TÔM THỊT</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonHaiSanHamMexico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonHaiSanHamMexico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Europe"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2016/04/hai-san-ham-mexico.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">25</coID>
+        <coMoTa>Hải sản hầm Mexico được chế biến từ các nguyên liệu mang đậm hương vị đất nước vùng bắc Mỹ tươi đẹp! Bạn sẽ được thưởng thức vị cay xé lưỡi, vị béo từ quả bơ và vị ngọt từ hải sản tươi ngon. Món hải sản hầm của Mexico chắc chắn sẽ khiến bạn suýt xoa vì độ cay nồng nhưng lại ngon đậm đà của mình đấy. Cùng Dạy nấu ăn Gia đình, Mở quán ®™ nấu món âu độc đáo này nhé!</coMoTa>
+        <coTenMonAn>HẢI SẢN HẦM MEXICO</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonLauKIMUCHI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonLauKIMUCHI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Japanese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2017/11/lau-kimuchi-nabe.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">18</coID>
+        <coMoTa>Kimuchi nabe là một loại lẩu sử dụng nguyên liệu chính là kim chi. Thế nhưng đã được người Nhật khéo léo biến tấu lại thành một món ăn mang bản sắc riêng của mình.
+
+Nabe có nghĩa là lẩu. Kimuchi nabe là một món ăn Nhật dễ làm và là loại lẩu khá nổi tiếng rất được yêu thích ở xứ sở Mặt trời mọc. Ngạc nhiên hơn bởi trong số các nguyên liệu sử dụng trong lẩu có cả kim chi – một món ăn nổi tiếng và được xếp vào danh sách “quốc hồn quốc túy” của người dân đất Hàn. Tiếp thu, học tập và sáng tạo theo phong cách của riêng mình, người Nhật đã làm nên món lẩu kimuchi ngon và nổi tiếng không kém những món lẩu “chính gốc” như lẩu oden, shabu nabe, chanko (lẩu sumo) hay lẩu cá hồi ishikari… Cùng Dạy nấu ăn Gia đình, Mở quán ®™ tìm hiểu chi tiết cách làm dưới đây</coMoTa>
+        <coTenMonAn>LẨU KIMUCHI NABE</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonLauKimChi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonLauKimChi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Korean"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2018/06/lau-kim-chi-hai-san.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">19</coID>
+        <coMoTa>Công thức lẩu kim chi hải sản sau đây chắc chắn bạn sẽ không thể bỏ qua để trổ tài, chiêu đãi mọi người vào những ngày cuối tuần sum họp. Món ăn này vừa dễ làm lại vừa thơm ngon khó cưỡng sẽ chinh phục bất kỳ những người thân yêu nào của bạn đấy!
+
+Lẩu kim chi hải sản là một trong số những món ăn nổi tiếng ở Hàn Quốc, được rất nhiều bạn trẻ Việt Nam yêu thích. Nếu đã từng thưởng thức món lẩu này, chắc hẳn bạn còn ấn tượng với vị cay đặc trưng của nước dùng cùng vị ngọt của các loại hải sản hòa cùng các loại rau củ. Món lẩu này đặc biệt thích hợp với những ngày se lạnh hay dịp tụ tập bạn bè, gia đình sum họp. Chẳng còn gì thú vị bằng việc được cùng mọi người ngồi quây quần bên nồi lẩu, thưởng thức món ăn nóng hổi, đang còn nghi ngút khói.
+Để thưởng thức món ăn hấp dẫn này, giờ đây bạn sẽ không cần phải bon chen ra nhà hàng chờ đợi với giá cả đắt đỏ nữa. Thay vào đó, hãy áp dụng công thức dạy nấu ăn đơn giản của Bếp Trưởng hàng đầu – Nguyễn Kính Đức để có được nồi lẩu chuẩn vị, đậm đà khó cưỡng.</coMoTa>
+        <coTenMonAn>LẨU KIM CHI HẢI SẢN</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonMIYAKIUDON -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonMIYAKIUDON">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Japanese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2015/10/mi-yakiudon.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">17</coID>
+        <coMoTa>Mì Udon là món ăn ngon Nhật Bản nổi tiếng trên khắp thế giới nhờ vào hương vị thơm ngon, bạn sẽ cảm nhận được độ mềm mịn, dai dai vô cùng đặc biệt của từng sợi mì lớn. Cùng xem hướng dẫn cách làm mì Yaki Udon Nhật Bản được chia sẻ trong bài viết này, chắc chắn bạn sẽ có ngay tô mì ngon đậm đà hương vị truyền thống để chiêu đãi cả nhà.
+
+Các loại mì Nhật Bản luôn được nhắc đến là món ăn hấp dẫn đối với nhiều người trên khắp thế giới, người Nhật rất tự hào về truyền thống văn hóa lâu đời và nền ẩm thực tinh tế của mình. Một tô mì ngon mang trong mình là cả sự say mê và nét tinh túy vốn có của ẩm thực xứ sở hoa anh đào, các loại mì truyền thống phổ biến tại Nhật bao gồm mì Udon, Ramen, Soba, Somen…</coMoTa>
+        <coTenMonAn>MÌ YAKIUDON NHẬT BẢN</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonMiCayHQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonMiCayHQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Korean"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2018/06/mi-cay-han-quoc.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">20</coID>
+        <coMoTa>Từ năm 2016, mì cay Hàn Quốc du nhập vào Việt Nam và tạo nên cơn sốt mạnh mẽ. Nhà nhà, người người rủ nhau đi ăn mì cay 7 cấp độ, thậm chí là 10 cấp độ để được trải nghiệm vị cay xé lưỡi nơi cổ họng. Với cách làm mì cay Hàn Quốc đơn giản sau đây, bạn không cần ra hàng quán tốn kém mà vẫn có thể mang trào lưu này về gian bếp nhà mình đấy!</coMoTa>
+        <coTenMonAn>MÌ CAY HÀN QUỐC</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonMiQuang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonMiQuang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_MiQuang1"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_MiQuang2"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_MiQuang3"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Vietnamese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2019/05/mi-quang-ga.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">1</coID>
+        <coMoTa>Món ăn này là đặc sản của tỉnh Quảng Nam nhưng được ưa chuộng trên khắp cả nước. Nguyên liệu gồm sợi mì, đậu phộng, bánh đa, thịt lợn quay và nước dùng có màu vàng của nghệ. Không ít du khách quốc tế khi được thưởng thức mì Quảng khi đến Việt Nam đã ca ngợi đây là món ăn hoàn hảo.</coMoTa>
+        <coTenMonAn>MÌ QUẢNG</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonPho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonPho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho1"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho2"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho3"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho4"/>
+        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho5"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Vietnamese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2016/07/pho-ha-noi.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">2</coID>
+        <coMoTa>Phở bò Hà Nội với hương vị của các loại thảo mộc hòa quyện trong nước dùng sẽ để lại ấn tượng sâu sắc cho ai đã từng một lần nếm thử nó. Để có thể làm nên một tô phở thơm ngon mà bạn ăn, người đầu bếp phải trải qua nhiều công đoạn từ sơ chế nguyên liệu cho tới việc nêm nếm gia vị, hầm xương…</coMoTa>
+        <coTenMonAn>PHỞ BÒ HÀ NỘI</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonRongBien -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonRongBien">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Korean"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2019/04/rong-bien-chay-toi.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">21</coID>
+        <coMoTa>Nếu là một “tín đồ” ăn vặt chính hiệu hay đang muốn tìm một công thức món ăn lạ miệng, bổ dưỡng cho cả nhà cùng nhâm nhi khi quây quần thì cách làm rong biển cháy tỏi ngon bá cháy này hẳn là đang đợi bạn trổ tài rồi.
+
+Rong biển là một thực phẩm bổ dưỡng thường được các chị em nội trợ dùng để chế biến thành nhiều món ăn ngon cho gia đình. Trong rong biển có khá nhiều khoáng chất và canxi, hàm lượng muối thấp nên có tác dụng làm giảm huyết áp. Ngoài ra, ăn rong biển còn có tác dụng bổ máu, hệ tuần hoàn, phòng chống các bệnh ung thư đường tiêu hóa… nên còn rất tốt cho phụ nữ mang thai và trẻ em lười ăn.
+
+Có nhiều cách chế biến rong biển ngon như: nấu canh rong biển, thịt nạc xào rong biển, salad rong biển, rong biển cuộn… nhưng không thể bỏ qua cách làm rong biển cháy tỏi muối ớt được rất nhiều người yêu thích dưới đây. Cùng Dạy nấu ăn Gia đình, Mở quán ®™ xem và lưu lại để áp dụng khi rảnh rỗi nhé!</coMoTa>
+        <coTenMonAn>RONG BIỂN CHÁY TỎI</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonSASHIMI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonSASHIMI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Japanese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2016/10/sashimi-ca-hoi.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">16</coID>
+        <coMoTa>Sashimi cá hồi Nhật Bản là một món ăn truyền thống từ đất nước mặt trời mọc mà thành phần chính là hải sản tươi sống, được đánh bắt riêng theo quy trình đặc biệt để đảm bảo sự tươi ngon của từng miếng sashimi. Nếu có dịp du lịch đến Nhật Bản, chắc chắn bạn sẽ không muốn bỏ qua món ăn nổi tiếng này.
+
+Trong văn hóa ẩm thực của Nhật Bản, ngoài việc vẻ đẹp tinh tế của món ăn thì giá trị sức khỏe luôn được đặt lên hàng đầu. Bí quyết giúp họ có sức khỏe trường thọ là nhờ vào chế độ ẩm thực lành mạnh. Với nguồn dinh dưỡng dồi dào, cá hồi luôn nằm trong danh sách món cá sống Nhật Bản được yêu thích nhất. Cá hồi được ăn sống để giữ lại toàn bộ những chất dinh dưỡng. Nếu là một tín đồ của ẩm thực Nhật Bản, bạn không thể bỏ qua món sashimi cá hồi Nhật Bản tươi ngon này.</coMoTa>
+        <coTenMonAn>SASHIMI CÁ HỒI NHẬT BẢN</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonSUSHI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonSUSHI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Japanese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2015/06/sushi-nhat-ban.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">18</coID>
+        <coMoTa>Cách làm món Sushi không khó, nhưng để làm được bạn cần đủ kiên nhẫn, cẩn thận trong từng bước để có món Sushi ngon và đẹp mắt nhất.
+Chỉ cần một chút tỉ mỉ thì chỉ 5 bước đơn giản là bạn đã có thể làm được món Sushi ngon miệng và đẹp mắt. Còn nếu bạn muốn học nấu ăn để không chỉ làm món Sushi mà còn rất nhiều món ngon khác thì hãy đến trường dạy nấu ăn để tham gia các khóa học làm sushi nhật chất lượng từ cơ bản đến nâng cao để rèn luyện kỹ năng, nâng cao tay nghề của bản thân nhé!</coMoTa>
+        <coTenMonAn>SUSHI NHẬT BẢN</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonSalad -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonSalad">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Europe"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2018/06/salad-ca-ngu.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">23</coID>
+        <coMoTa>Là món ăn có vị thanh mát tạo cảm giác ngon miệng cho người thưởng thức nên salad cá ngừ được nhiều người ưa chuộng và học cách chế biến. Vậy bạn đã biết cách làm salad cá ngừ đơn giản, hấp dẫn tại nhà chưa? Nếu chưa từng thì bạn có thể nhanh tay ghi chép công thức sau của Dạy nấu ăn Gia đình, Mở quán ®™ vào sổ tay của mình nhé.
+
+Salad cá ngừ là món ăn thơm ngon, hiện được rất nhiều quan tâm tìm hiểu. Vị thanh mát của các loại rau củ ngấm đều gia vị cùng vị béo của cá ngừ đem đến cảm giác thích thú cho người ăn. Không chỉ thế, món salad này có nhiều chất xơ, vitamin và chất dinh dưỡng có lợi cho sức khỏe. Hơn nữa, món ăn cũng tương đối dễ thực hiện tại nhà, giúp bạn tiết kiệm được nhiều thời gian để làm việc khác. Đặc biệt, salad cá ngừ rất thích hợp với những ngày hè có tiết trời nắng nóng.</coMoTa>
+        <coTenMonAn>SALAD CÁ NGỪ</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonSuonNuongHQ -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonSuonNuongHQ">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Korean"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2018/07/suon-nuong.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">22</coID>
+        <coMoTa>Hàn Quốc nổi tiếng với nền ẩm thực độc đáo, đa dạng món ngon. Trong đó, món sườn nướng Hàn Quốc đang được rất nhiều người Việt ưa chuộng chế biến và sử dụng tại nhà. Nếu bạn muốn thưởng thức sườn nướng thơm ngon chuẩn vị Hàn thì có thể tham khảo bí kíp chế biến dưới đây của Dạy nấu ăn Gia đình, Mở quán ®™ nhé.
+
+Món sườn nướng kiểu Hàn có màu sắc bắt mắt, dậy mùi thơm vô cùng kích thích vị giác và khứu giác của người ăn. Để chế biến được món nướng này, đòi hỏi người chế biến phải tinh tế trong việc kết hợp các loại gia vị đúng tỷ lệ. Đặc biệt, món ăn này rất thích hợp dành cho những ngày cuối tuần bạn bè, gia đình sum họp. Chắc chắn, sẽ không còn điều gì thú vị bằng việc thưởng thức món sườn nướng trong tiết trời se lạnh.</coMoTa>
+        <coTenMonAn>SƯỜN NƯỚNG HÀN QUỐC</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonThitXaXiu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonThitXaXiu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Chinese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2016/08/thit-xa-xiu.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">13</coID>
+        <coMoTa>Thịt xá xíu là một món ăn có xuất xứ từ Trung Hoa, hương vị thơm ngon kết hợp với màu sắc bắt mắt của món ăn chắc chắn sẽ làm cả gia đình bạn mê mẩn. Hôm nay, Dạy nấu ăn Gia đình, Mở quán ®™ sẽ hướng dẫn các bạn công thức ngon đúng vị từ 8 loại gia vị nhé!
+
+Xá xíu là phương pháp chế biến hay tên gọi của một món ăn thì đến nay vẫn còn nhiều tranh cãi. Theo nhiều tài liệu ghi nhận, xá xíu tên của món ăn từ thịt heo. Thịt được ướp gia vị cầu kì rồi quay hoặc nướng chín. Món ăn hấp dẫn này là một trong những món ăn của người hoa và nguồn gốc từ Trung Quốc, vùng Quảng Đông. Chưa ai ghi nhận chính xác được thời gian món ăn du nhập vào Việt Nam nhưng chắc hẳn chúng đã xuất hiện ngay từ những ngày cộng đồng người Hoa di cư đến sinh sống tại nước ta.
+
+Thịt sau khi chế biến xong có thể ăn kèm với nhiều loại thức ăn khác nhau như: cơm, mì xào, xôi, salad, bánh mì… Vì thế độ “hot” của món ăn này chưa bao giờ giảm. Cùng học nấu ăn ngay với công thức làm thịt xá xíu dưới đây nhé.</coMoTa>
+        <coTenMonAn>THỊT XÁ XÍU</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonTomKhoTau -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonTomKhoTau">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Chinese"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2016/03/tom-kho-tau.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15</coID>
+        <coMoTa>Tôm kho tàu là một món ăn truyền thống rất dân dã của người dân Việt Nam nói chung và người dân Nam Bộ nói riêng. Đầu bếp Trần Thanh Huy nổi tiếng với các chương trình dạy nấu ăn gia đình của Dạy nấu ăn Gia đình, Mở quán ®™ sẽ mang đến cho bạn cách làm chuẩn, giúp bạn nâng cao kỹ năng nấu những món ăn chung với cơm thông dụng.
+
+Tôm là nguyên liệu không còn xa lạ trong các món ăn của người Việt. Hương vị hấp dẫn cùng lượng dinh dưỡng dồi dào trong tôm giúp chúng trở thành nguyên liệu hải sản được yêu thích hàng đầu trong những món ăn gia đình và cả món ăn đãi tiệc. Hơn nữa, trong 10 lời khuyên dinh dưỡng của Bộ Y tế, tôm cũng được xếp vào nhóm thực phẩm nên ăn để bổ sung đầy đủ nguồn đạm động vật và thực vật cho cơ thể.
+
+Món tôm kho tàu là lựa chọn hàng đầu được nhiều người nghĩ đến khi muốn làm một món ăn đưa cơm cho gia đình. Món ăn hấp dẫn ở chỗ thịt tôm khi kho lên rất săn chắc hòa cùng vị ngọt thơm của nước dừa. Đặc biệt các món ăn Trung Hoa này ăn kèm với cơm trắng thêm chút ớt cay cay rất hấp dẫn. Nếu bạn vẫn còn băn khoăn chưa biết đâu là cách làm món tôm kho tàu đáng tin cậy dựa thì có thể tham khảo công thức được đưa ra dưới đây.</coMoTa>
+        <coTenMonAn>TÔM KHO TÀU</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonVitOmPhap -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonVitOmPhap">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Europe"/>
+        <coAnh>https://cdn.daynauan.info.vn/wp-content/uploads/2016/08/dui-vit-om-kieu-phap.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">24</coID>
+        <coMoTa>Nếu có một ngày rảnh rỗi muốn đổi khẩu vị cho cả gia đình, các bạn nên thử món Vị tom kiểu Pháp này xem sao nhé, chắc chắn sẽ vô cùng thú vị.
+
+Và hiện nay món ăn truyền thống của người Pháp này đã có mặt trong hầu hết trong tất cả các thực đơn các nhà hàng kiểu Bistro trên khắp thế giới. Cùng Dạy nấu ăn Gia đình, Mở quán ®™ học ngay cách làm Đùi vịt om kiểu Pháp nhé!</coMoTa>
+        <coTenMonAn>ĐÙI VỊT OM KIỂU PHÁP</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonVitQuay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonVitQuay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
+        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Chinese"/>
+        <coAnh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cdn.daynauan.info.vn/wp-content/uploads/2015/06/vit-quay-bac-kinh-1.jpg</coAnh>
+        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#long">8</coID>
+        <coMoTa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vịt quay Bắc Kinh là món ăn nổi tiếng của người Trung Hoa và rất được yêu thích tại Việt Nam cũng như các quốc gia khác. Cách làm món ăn này khá phức tạp và cần nhiều thời gian, tuy nhiên, với phần da vịt bóng vàng, giòn rụm cùng phần thịt ngọt mềm, thơm nức mũi sẽ khiến bạn muốn bắt tay thực hiện ngay món ngon có “1 không 2” này!
+Vịt quay Bắc Kinh là đặc sản nổi tiếng của vùng Đông Bắc, giữ vị trí quan trọng trong ẩm thực Bắc Kinh nói riêng và Trung Quốc nói chung. Là món ăn có công thức chế biến phức tạp, tuy nhiên, với sự hướng dẫn của Dạy Nấu Ăn, bạn sẽ có ngay cho mình món ngon hấp dẫn này.</coMoTa>
+        <coTenMonAn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VỊT QUAY BẮC KINH GIÒN</coTenMonAn>
+        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_BanhDaMe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_BanhDaMe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bánh đa mè</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_BanhPho -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_BanhPho">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bánh phở</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_BanhTrang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_BanhTrang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bánh tráng</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Bun -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Bun">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bún tươi</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_CaBaSa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_CaBaSa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cá Basa</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_CaLoc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_CaLoc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cá Lốc Tươi</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_ChaCA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_ChaCA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Chả cá thác lác</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_DauXanh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_DauXanh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Đậu xanh</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Ga -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Ga">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gà ta</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Gao -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Gao">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gạo tấm</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_GiaVi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_GiaVi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gia vị</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_HanhTay -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_HanhTay">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hành tây</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Khoai -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Khoai">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Khoai</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Mam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Mam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mắm cá linh</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_MiQuang -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_MiQuang">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mì quảng</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Muc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Muc">
         <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
         <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mực ống</coTenNguyenLieu>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Nuong -->
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_NuocDua -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Nuong">
-        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
-        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Indian"/>
-        <coAnh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://yt.cdnxbvn.com/medias/uploads/187/187940-do-nuong.jpg</coAnh>
-        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">125</coID>
-        <coMoTa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dùng cho gia đình</coMoTa>
-        <coTenMonAn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thịt nướng</coTenMonAn>
-        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Rau -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Rau">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_NuocDua">
         <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
-        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cải xanh</coTenNguyenLieu>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Nước dừa tươi</coTenNguyenLieu>
     </owl:NamedIndividual>
     
 
 
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Soup -->
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Rau -->
 
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Soup">
-        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
-        <coThanhPhan rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_1"/>
-        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThaiLan"/>
-        <coAnh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://cookpad.com/vn/cong-thuc/11865102-soup-ga</coAnh>
-        <coAnh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://img-global.cpcdn.com/recipes/ef9c872f331a67d8/751x532cq70/soup-tom-ngo-n%E1%BA%A5m-recipe-main-photo.jpg</coAnh>
-        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">126</coID>
-        <coMoTa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dùng cho gia đình</coMoTa>
-        <coTenMonAn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soup cua</coTenMonAn>
-        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</laMonChay>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_1 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_1">
-        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
-        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Ca"/>
-        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kg</coDVT>
-        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.2</coSoLuong>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_2 -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_2">
-        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
-        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Muc"/>
-        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Rau"/>
-        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">kg</coDVT>
-        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.5</coSoLuong>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThaiLan -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThaiLan">
-        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#KhuVuc"/>
-        <coTenKhuVuc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thái Lan</coTenKhuVuc>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Tom -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Tom">
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Rau">
         <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
-        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tôm đất</coTenNguyenLieu>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Các loại rau</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Thit3Chi -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Thit3Chi">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thịt ba chỉ</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_ThitBo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_ThitBo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thịt bò</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Tom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Tom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tôm</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_TrungGa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_TrungGa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NguyenLieu"/>
+        <coTenNguyenLieu rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Trứng gà</coTenNguyenLieu>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_BunMam1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_BunMam1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Mam"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">300</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_CaBaSa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_CaBaSa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_CaBaSa"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">200</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaCa -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaCa">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_ChaCA"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">300</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Tom"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">200</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Thit3Chi"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">200</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Khoai"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">củ</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ChaGio4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_DauXanh"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">100</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ComTam1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ComTam1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Gao"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1000</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ComTam2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ComTam2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_TrungGa"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Quả</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">4</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ComTam3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_ComTam3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Thit3Chi"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">400</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GiaViBunBo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GiaViBunBo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_GiaVi"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sa tế, đường, dầu hào, bột nêm, nước mắm</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Tom"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">500</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_BanhTrang"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cuộn</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Thit3Chi"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">700</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_GoiCuon4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Bun"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">500</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_MiQuang1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_MiQuang1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Ga"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">con</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_MiQuang2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_MiQuang2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_MiQuang"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gr</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">500</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_MiQuang3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_MiQuang3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_BanhDaMe"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cái</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">5</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Muc -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Muc">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Muc"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">200</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_NuocDua -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_NuocDua">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_NuocDua"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">trái</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_BanhPho"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">500</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_ThitBo"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">500</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_HanhTay"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">gram</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">200</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_GiaVi"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bột ngọt, mắm, muối, đường, tiêu, dầu ăn, tương ớt, tương đen, quế khô, hoa hồi, thảo quả, gừng tươi, hành tím, hạt mùi ...</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_Pho5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Rau"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Các loại rau thơm, giá, ớt sừng, chanh, rau mùi, hành lá</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</coSoLuong>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_RauBunBo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#TP_RauBunBo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#ThanhPhan"/>
+        <coNguyenLieu rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#NL_Rau"/>
+        <coDVT rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rau thơm, giá sống, hành tươi, hoa chuối và rau ngổ, rau muống chẻ, Hành khô, tỏi, ớt</coDVT>
+        <coSoLuong rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</coSoLuong>
     </owl:NamedIndividual>
     
 
@@ -341,20 +1210,6 @@
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Vietnamese">
         <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#KhuVuc"/>
         <coTenKhuVuc rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Việt Nam</coTenKhuVuc>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#luoc -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#luoc">
-        <rdf:type rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#MonAn"/>
-        <thuocKhuVuc rdf:resource="http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#Vietnamese"/>
-        <coAnh rdf:datatype="http://www.w3.org/2001/XMLSchema#string">https://i.vietgiaitri.com/2013/3/4/mon-nha-ngheo-293116.jpg</coAnh>
-        <coID rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">124</coID>
-        <coMoTa rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dùng cho gia đình</coMoTa>
-        <coTenMonAn rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rau luộc</coTenMonAn>
-        <laMonChay rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</laMonChay>
     </owl:NamedIndividual>
 </rdf:RDF>
 

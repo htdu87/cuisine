@@ -19,6 +19,7 @@ namespace Cuisine.Controllers
         private SparqlParameterizedString queryString;
         private LeviathanQueryProcessor process;
         private IDictionary dic;
+        private IGraph g;
 
         protected override void Initialize(RequestContext requestContext)
         {
@@ -26,7 +27,7 @@ namespace Cuisine.Controllers
 
             string dsPath = Server.MapPath("~/App_Data/CusineThao.owl");
             //string dsPath = Server.MapPath("~/App_Data/db.owl");
-            IGraph g = new Graph();
+            g = new Graph();
             g.LoadFromFile(dsPath);
 
             InMemoryDataset ds = new InMemoryDataset(g);
@@ -40,7 +41,7 @@ namespace Cuisine.Controllers
             queryString.Namespaces.AddNamespace("cuisine", new Uri("http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#"));
             //queryString.Namespaces.AddNamespace("cuisine", new Uri("http://www.semanticweb.org/du/ontologies/2021/1/cuisine#"));
 
-            queryString.CommandText = "select * where {?x rdf:type cuisine:KhuVuc . ?x cuisine:coTenKhuVuc ?tenKV}";
+            queryString.CommandText = "select * where {?x rdf:type cuisine:KhuVuc . ?x cuisine:coTenKhuVuc ?tenKV} ORDER BY ?tenKV";
 
             SparqlQueryParser sparqlparser = new SparqlQueryParser();
             SparqlQuery query = sparqlparser.ParseFromString(queryString);
@@ -68,48 +69,62 @@ namespace Cuisine.Controllers
         }
 
         [HttpPost]
-        public ActionResult Search(string keyword)
+        public ActionResult Search(string keyword, string chay)
         {
             List<Dish> listDish = new List<Dish>();
 
             ViewBag.keyword = keyword;
             ViewBag.dsKhuVuc = dic;
 
-            queryString.CommandText = "select * where {?x rdf:type cuisine:MonAn . ?x cuisine:thuocKhuVuc cuisine:"+keyword+ " ; cuisine:coTenMonAn ?ten ; cuisine:coMoTa ?mota ; cuisine:coAnh ?anh ; cuisine:laMonChay ?chay ; cuisine:coID ?id . }";
+            string comText = "select * where {?x rdf:type cuisine:MonAn . ?x cuisine:thuocKhuVuc cuisine:" + keyword + " ; cuisine:coTenMonAn ?ten ; cuisine:coMoTa ?mota ; cuisine:coAnh ?anh ; cuisine:laMonChay ?chay ; cuisine:coID ?id . } ORDER BY ?ten";
+
+            if (!string.IsNullOrEmpty(chay) && chay == "true")
+                comText = "select * where {?x rdf:type cuisine:MonAn . ?x cuisine:thuocKhuVuc cuisine:" + keyword + " ; cuisine:coTenMonAn ?ten ; cuisine:coMoTa ?mota ; cuisine:coAnh ?anh ; cuisine:laMonChay ?chay ; cuisine:coID ?id . FILTER(?chay = true) . }  ORDER BY ?ten";
+
+            queryString.CommandText = comText;
 
             SparqlQueryParser sparqlparser = new SparqlQueryParser();
             SparqlQuery query = sparqlparser.ParseFromString(queryString);
 
             SparqlResultSet resultSet = (SparqlResultSet)process.ProcessQuery(query);
 
-            foreach (SparqlResult result in resultSet)
+            if (resultSet.Count > 0)
             {
-                IUriNode nodeX = (IUriNode)result.Value("x");
-                ILiteralNode nodeName = (ILiteralNode)result.Value("ten");
-                ILiteralNode nodeDesc = (ILiteralNode)result.Value("mota");
-                ILiteralNode nodePicture = (ILiteralNode)result.Value("anh");
-                ILiteralNode nodeChay = (ILiteralNode)result.Value("chay");
-                ILiteralNode nodeID = (ILiteralNode)result.Value("id");
+                foreach (SparqlResult result in resultSet)
+                {
+                    IUriNode nodeX = (IUriNode)result.Value("x");
+                    ILiteralNode nodeName = (ILiteralNode)result.Value("ten");
+                    ILiteralNode nodeDesc = (ILiteralNode)result.Value("mota");
+                    ILiteralNode nodePicture = (ILiteralNode)result.Value("anh");
+                    ILiteralNode nodeChay = (ILiteralNode)result.Value("chay");
+                    ILiteralNode nodeID = (ILiteralNode)result.Value("id");
 
-                Dish dish = new Dish();
-                dish.Desc = nodeDesc.Value;
-                dish.Uri = nodeX.Uri.Fragment.Remove(0, 1);
-                dish.Name = nodeName.Value;
-                dish.Picture = nodePicture.Value;
-                dish.Chay = nodeChay.Value == "true";
-                dish.Id = long.Parse(nodeID.Value);
+                    Dish dish = new Dish();
+                    dish.Desc = nodeDesc.Value;
+                    dish.Uri = nodeX.Uri.Fragment.Remove(0, 1);
+                    dish.Name = nodeName.Value;
+                    dish.Picture = nodePicture.Value;
+                    dish.Chay = nodeChay.Value == "true";
+                    dish.Id = long.Parse(nodeID.Value);
 
-                listDish.Add(dish);
+                    listDish.Add(dish);
+                }
+
+                ViewBag.searchResult = listDish;
             }
-
-            ViewBag.searchResult = listDish;
+            else
+            {
+                ViewBag.Message = "Không tìm thấy món ăn nào, vui lòng thử lại với các khu vực khác!";
+            }
 
             return View();
         }
 
-        public ActionResult Detail(int? id)
+        public ActionResult Detail(string id)
         {
-            if(id != null)
+            int _id;
+
+            if (!string.IsNullOrEmpty(id) && int.TryParse(id, out _id))
             {
                 queryString.CommandText = "select * where {?x rdf:type cuisine:MonAn . ?x cuisine:coID ?id ; cuisine:coTenMonAn ?ten ; cuisine:coMoTa ?mota ; cuisine:coAnh ?anh ; cuisine:laMonChay ?chay . FILTER(?id = " + id + ") }";
 
@@ -119,6 +134,7 @@ namespace Cuisine.Controllers
                 SparqlResultSet resultSet = (SparqlResultSet)process.ProcessQuery(query);
                 if(resultSet.Count>0)
                 {
+                    // Lay thong tin mon an
                     SparqlResult result = resultSet[0];
 
                     IUriNode nodeX = (IUriNode)result.Value("x");
@@ -137,31 +153,39 @@ namespace Cuisine.Controllers
                     dish.Id = long.Parse(nodeID.Value);
 
                     ViewBag.dish = dish;
+
+                    // Lay thanh phan mon an
+                    List<ThanhPhan> congThuc = new List<ThanhPhan>();
+
+                    queryString.CommandText = "select ?tennl ?sl ?dvt where {?x rdf:type cuisine:MonAn . ?x cuisine:coID ?id . ?x cuisine:coThanhPhan ?tp . ?tp cuisine:coDVT ?dvt . ?tp cuisine:coSoLuong ?sl . ?tp cuisine:coNguyenLieu ?nl . ?nl cuisine:coTenNguyenLieu ?tennl . FILTER(?id = " + id + ") }";
+                    query = sparqlparser.ParseFromString(queryString);
+                    resultSet = (SparqlResultSet)process.ProcessQuery(query);
+
+                    foreach (SparqlResult _result in resultSet)
+                    {
+                        ILiteralNode nodeTen = (ILiteralNode)_result.Value("tennl");
+                        ILiteralNode nodeSL = (ILiteralNode)_result.Value("sl");
+                        ILiteralNode nodeDVT = (ILiteralNode)_result.Value("dvt");
+
+                        ThanhPhan tp = new ThanhPhan();
+                        tp.DVT = nodeDVT.Value;
+                        tp.Ten = nodeTen.Value;
+                        tp.SoLuong = float.Parse(nodeSL.Value);
+
+                        congThuc.Add(tp);
+                    }
+
+                    ViewBag.congThuc = congThuc;
                 }
-
-                List<ThanhPhan> congThuc = new List<ThanhPhan>();
-
-                queryString.CommandText = "select ?tennl ?sl ?dvt where {?x rdf:type cuisine:MonAn . ?x cuisine:coID ?id . ?x cuisine:coThanhPhan ?tp . ?tp cuisine:coDVT ?dvt . ?tp cuisine:coSoLuong ?sl . ?tp cuisine:coNguyenLieu ?nl . ?nl cuisine:coTenNguyenLieu ?tennl . FILTER(?id = " + id+") }";
-                query = sparqlparser.ParseFromString(queryString);
-                resultSet = (SparqlResultSet)process.ProcessQuery(query);
-
-                foreach (SparqlResult result in resultSet)
+                else
                 {
-                    ILiteralNode nodeTen = (ILiteralNode)result.Value("tennl");
-                    ILiteralNode nodeSL = (ILiteralNode)result.Value("sl");
-                    ILiteralNode nodeDVT = (ILiteralNode)result.Value("dvt");
-
-                    ThanhPhan tp = new ThanhPhan();
-                    tp.DVT = nodeDVT.Value;
-                    tp.Ten = nodeTen.Value;
-                    tp.SoLuong = float.Parse(nodeSL.Value);
-
-                    congThuc.Add(tp);
+                    ViewBag.Message = "Không tìm thấy món ăn, vui lòng kiểm tra lại!!!";
                 }
-
-                ViewBag.congThuc = congThuc;
             }
-            
+            else
+            {
+                ViewBag.Message = "Yêu cầu xem chi tiết thông tin món ăn không hợp lệ!!!";
+            }
 
             return View();
         }

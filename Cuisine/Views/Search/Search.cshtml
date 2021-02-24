@@ -15,6 +15,10 @@
     <script>
         $(document).ready(function () {
             $('.select2').select2();
+
+            $('#btn-chay-submit').click(function () {
+                $('#txt-chay').val('true');
+            });
         });
     </script>
 }
@@ -31,6 +35,7 @@
                 <li style="width:100%">
                     <form class="form-inline" method="post" action="">
                         <div class="form-group" style="width:70%">
+                            <input type="hidden" name="chay" value="false" id="txt-chay" />
                             <select name="keyword" class="form-control select2">
                                 @foreach (string key in ViewBag.dsKhuVuc.Keys)
                                 {
@@ -45,10 +50,9 @@
                                 <span class="sr-only">Toggle Dropdown</span>
                             </button>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Món chay</a></li>
+                                <li><button type="submit" class="btn btn-link" id="btn-chay-submit">Món chay</button></li>
                             </ul>
                         </div>
-                        
                     </form>
                 </li>
             </ul>
@@ -56,29 +60,40 @@
     </div>
 </nav>
 <div class="container">
-    @foreach (Dish d in ViewBag.searchResult)
-    {
-        <div class="media">
-            <div class="media-left">
-                <a href="detail?id=@d.Id">
-                    <img src="@d.Picture" class="media-object" width="64" />
-                </a>
-            </div>
-            <div class="media-body">
-                <h4 class="media-heading">
-                    <a href="detail?id=@d.Id">@d.Name</a>
-                    @if (d.Chay)
-                    {
-                        <span class="loai-mon mon-chay">Món chay</span>
-                    }
-                    else
-                    {
-                        <span class="loai-mon mon-man">Món mặn</span>
-                    }
-                </h4>
-                @d.Desc
-            </div>
+    <div class="row">
+        <div class="col-md-8">
+            @if (ViewBag.searchResult != null)
+            {
+                foreach (Dish d in ViewBag.searchResult)
+                {
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="detail?id=@d.Id">
+                                <img src="@d.Picture" class="media-object" width="128" alt="@d.Name" title="@d.Name" />
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <a href="detail?id=@d.Id">@d.Name</a>
+                                @if (d.Chay)
+                                {
+                                    <span class="loai-mon mon-chay">Món chay</span>
+                                }
+                                else
+                                {
+                                    <span class="loai-mon mon-man">Món mặn</span>
+                                }
+                            </h4>
+                            <p style="text-align:justify;overflow: hidden;text-overflow: ellipsis;display: -webkit-box;-webkit-line-clamp: 3;-webkit-box-orient: vertical;">@d.Desc</p>
+                        </div>
+                    </div>
+                    <hr style="margin:5px 0px" />
+                }
+            }
+            else
+            {
+                <p class="text-muted text-center"><i>@ViewBag.Message</i></p>
+            }
         </div>
-        <hr/>
-    }
+    </div>
 </div>
