@@ -52,9 +52,28 @@
     {
         <p class="text-danger text-center"><i>@ViewBag.Message</i></p>
     }
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2>Có thể bạn sẽ thích</h2>
+        </div>
+    </div>
+    <div class="row">
+        @foreach (Dish d in ViewBag.relatedDishes)
+        {
+            <div class="col-sm-4 col-md-3">
+                <div class="thumbnail">
+                    <img src="@d.Picture" alt="@d.Name">
+                    <div class="caption">
+                        <h4><a href="detail?id=@d.Id">@d.Name</a></h4>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
     <div class="row">
         <div class="col-md-12" style="margin-top:15px">
-            <a href="javascript:window.history.back()" role="button" class="btn btn-default">&nbsp;&nbsp;Trở về&nbsp;&nbsp;</a>
+            <a href="." role="button" class="btn btn-default">&nbsp;&nbsp;Tìm tiếp&nbsp;&nbsp;</a>
         </div>
     </div>
 </div>

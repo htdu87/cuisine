@@ -5,6 +5,71 @@
 
 @section styles {
     <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css" rel="stylesheet" />
+
+    <style type="text/css">
+        .cb-slideshow,
+        .cb-slideshow:after { 
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            z-index: 0; 
+        }
+        .cb-slideshow:after { 
+            content: '';
+            background: transparent; 
+        }
+        .cb-slideshow div { 
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            color: transparent;
+            background-size: cover;
+            background-position: 50% 50%;
+            background-repeat:no-repeat;
+            z-index: 0;
+        }
+        .cb-slideshow div:nth-child(1)  { 
+            background-image: url(/Content/Images/nguyen-lieu/s1.jpg) 
+        }
+        .cb-slideshow div:nth-child(2)  { 
+            background-image: url(/Content/Images/nguyen-lieu/s2.jpg);
+        }
+        .cb-slideshow div:nth-child(3)  { 
+            background-image: url(/Content/Images/nguyen-lieu/s3.jpg);
+        }
+        .cb-slideshow div:nth-child(4)  { 
+            background-image: url(/Content/Images/nguyen-lieu/s4.jpg);
+        }
+        .cb-slideshow div:nth-child(5)  { 
+            background-image: url(/Content/Images/nguyen-lieu/s5.jpg);
+        }
+        .cb-slideshow div:nth-child(6)  { 
+            background-image: url(/Content/Images/nguyen-lieu/s6.jpg);
+        }
+        .cb-slideshow div:nth-child(7)  { 
+            background-image: url(/Content/Images/nguyen-lieu/s7.jpg);
+        }
+        .cb-slideshow div:nth-child(8)  { 
+            background-image: url(/Content/Images/nguyen-lieu/s8.jpg);
+        }
+        .cb-slideshow div:nth-child(9)  { 
+            background-image: url(/Content/Images/nguyen-lieu/s9.jpg);
+        }
+        .cb-slideshow div:nth-child(10)  { 
+            background-image: url(/Content/Images/nguyen-lieu/s10.jpg);
+        }
+        .cb-slideshow div:nth-child(11)  { 
+            background-image: url(/Content/Images/nguyen-lieu/s11.jpg);
+        }
+        .cb-slideshow div:nth-child(12)  { 
+            background-image: url(/Content/Images/nguyen-lieu/s12.jpg);
+        }
+
+    </style>
 }
 
 @section scripts {
@@ -20,23 +85,41 @@
         });
     </script>
 }
-<div class="container">
-    <form method="post" action="/search/search">
-        <div class="form-group text-center">
-            <img src="~/Content/Images/cooking-logo.png" width="150" alt="Cooking logo" title="Cooking logo" />
-        </div>
-        <div class="form-group">
-            <input type="hidden" name="chay" value="false" id="txt-chay"/>
-            <select name="keyword" class="form-control select2">
-                @foreach (string key in ViewBag.dsKhuVuc.Keys)
-                {
-                    <option value="@key">@ViewBag.dsKhuVuc[key]</option>
-                }
-            </select>
-        </div>
-        <div class="form-group text-center">
-            <button type="submit" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Món ăn&nbsp;&nbsp;&nbsp;</button> &nbsp;&nbsp;
-            <button type="submit" class="btn btn-default" id="btn-chay-submit">Món chay</button>
-        </div>
-    </form>
+<div class="carousel slide" data-ride="carousel" data-pause="null" data-interval="10000" style="position:absolute; left:0; top:0; width:100%; height:100%">
+    <div class="carousel-inner cb-slideshow" role="listbox">
+        <div class="item active"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+</div>
+<div style="position:absolute; left:0; top:0; width:100%; height:100%">
+    <div class="container">
+        <form method="post" action="/search/search" style="margin-top:100px">
+            <div class="form-group text-center">
+                <img src="~/Content/Images/cooking-logo-shadow.png" width="150" alt="Cooking logo" title="Cooking logo" />
+            </div>
+            <div class="form-group">
+                <input type="hidden" name="chay" value="false" id="txt-chay" />
+                <select name="keyword" class="form-control select2">
+                    @foreach (string key in ViewBag.dsKhuVuc.Keys)
+                    {
+                        <option value="@key">@ViewBag.dsKhuVuc[key]</option>
+                    }
+                </select>
+            </div>
+            <div class="form-group text-center">
+                <button type="submit" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Món ăn&nbsp;&nbsp;&nbsp;</button> &nbsp;&nbsp;
+                <button type="submit" class="btn btn-default" id="btn-chay-submit">Món chay</button>
+            </div>
+        </form>
+    </div>
 </div>

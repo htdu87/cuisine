@@ -172,7 +172,20 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\cooking-logo-shadow.png" />
     <Content Include="Content\Images\cooking-logo.png" />
+    <Content Include="Content\Images\nguyen-lieu\s1.jpg" />
+    <Content Include="Content\Images\nguyen-lieu\s10.jpg" />
+    <Content Include="Content\Images\nguyen-lieu\s11.jpg" />
+    <Content Include="Content\Images\nguyen-lieu\s12.jpg" />
+    <Content Include="Content\Images\nguyen-lieu\s2.jpg" />
+    <Content Include="Content\Images\nguyen-lieu\s3.jpg" />
+    <Content Include="Content\Images\nguyen-lieu\s4.jpg" />
+    <Content Include="Content\Images\nguyen-lieu\s5.jpg" />
+    <Content Include="Content\Images\nguyen-lieu\s6.jpg" />
+    <Content Include="Content\Images\nguyen-lieu\s7.jpg" />
+    <Content Include="Content\Images\nguyen-lieu\s8.jpg" />
+    <Content Include="Content\Images\nguyen-lieu\s9.jpg" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />

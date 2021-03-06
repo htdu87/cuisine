@@ -126,7 +126,7 @@ namespace Cuisine.Controllers
 
             if (!string.IsNullOrEmpty(id) && int.TryParse(id, out _id))
             {
-                queryString.CommandText = "select * where {?x rdf:type cuisine:MonAn . ?x cuisine:coID ?id ; cuisine:coTenMonAn ?ten ; cuisine:coMoTa ?mota ; cuisine:coAnh ?anh ; cuisine:laMonChay ?chay . FILTER(?id = " + id + ") }";
+                queryString.CommandText = "select * where {?x rdf:type cuisine:MonAn . ?x cuisine:coID ?id ; cuisine:coTenMonAn ?ten ; cuisine:coMoTa ?mota ; cuisine:coAnh ?anh ; cuisine:laMonChay ?chay ; cuisine:thuocKhuVuc ?kv . FILTER(?id = " + id + ") }";
 
                 SparqlQueryParser sparqlparser = new SparqlQueryParser();
                 SparqlQuery query = sparqlparser.ParseFromString(queryString);
@@ -143,6 +143,7 @@ namespace Cuisine.Controllers
                     ILiteralNode nodePicture = (ILiteralNode)result.Value("anh");
                     ILiteralNode nodeChay = (ILiteralNode)result.Value("chay");
                     ILiteralNode nodeID = (ILiteralNode)result.Value("id");
+                    IUriNode nodeKV = (IUriNode)result.Value("kv");
 
                     Dish dish = new Dish();
                     dish.Desc = nodeDesc.Value;
@@ -176,6 +177,36 @@ namespace Cuisine.Controllers
                     }
 
                     ViewBag.congThuc = congThuc;
+
+                    // Lay mon an cung khu vuc
+                    List<Dish> relatedDishes = new List<Dish>();
+                    queryString.CommandText = "select * where {  ?x rdf:type cuisine:MonAn . ?x cuisine:coID ?id ; cuisine:coTenMonAn ?ten ; cuisine:coMoTa ?mota ; cuisine:coAnh ?anh ; cuisine:laMonChay ?chay ; cuisine:thuocKhuVuc ?kv . FILTER(?id != " + id + " && ?kv = cuisine:"+nodeKV.Uri.Fragment.Remove(0, 1) + ") } ORDER BY RAND() LIMIT 4";
+
+                    sparqlparser = new SparqlQueryParser();
+                    query = sparqlparser.ParseFromString(queryString);
+
+                    resultSet = (SparqlResultSet)process.ProcessQuery(query);
+                    foreach (SparqlResult _result in resultSet)
+                    {
+                        IUriNode _nodeX = (IUriNode)_result.Value("x");
+                        ILiteralNode _nodeName = (ILiteralNode)_result.Value("ten");
+                        ILiteralNode _nodeDesc = (ILiteralNode)_result.Value("mota");
+                        ILiteralNode _nodePicture = (ILiteralNode)_result.Value("anh");
+                        ILiteralNode _nodeChay = (ILiteralNode)_result.Value("chay");
+                        ILiteralNode _nodeID = (ILiteralNode)_result.Value("id");
+
+                        Dish _dish = new Dish();
+                        _dish.Desc = _nodeDesc.Value;
+                        _dish.Uri = _nodeX.Uri.Fragment.Remove(0, 1);
+                        _dish.Name = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(_nodeName.Value.ToLower());
+                        _dish.Picture = _nodePicture.Value;
+                        _dish.Chay = _nodeChay.Value == "true";
+                        _dish.Id = long.Parse(_nodeID.Value);
+
+                        relatedDishes.Add(_dish);
+                    }
+
+                    ViewBag.relatedDishes = relatedDishes;
                 }
                 else
                 {
