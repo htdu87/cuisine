@@ -19,6 +19,7 @@ namespace Cuisine.Controllers
         private SparqlParameterizedString queryString;
         private LeviathanQueryProcessor process;
         private IDictionary dic;
+        private IDictionary dicMaterial;
         private IGraph g;
 
         protected override void Initialize(RequestContext requestContext)
@@ -41,6 +42,7 @@ namespace Cuisine.Controllers
             queryString.Namespaces.AddNamespace("cuisine", new Uri("http://www.semanticweb.org/latitude/ontologies/2021/1/untitled-ontology-12#"));
             //queryString.Namespaces.AddNamespace("cuisine", new Uri("http://www.semanticweb.org/du/ontologies/2021/1/cuisine#"));
 
+            // Lay danh sach khu vuc
             queryString.CommandText = "select * where {?x rdf:type cuisine:KhuVuc . ?x cuisine:coTenKhuVuc ?tenKV} ORDER BY ?tenKV";
 
             SparqlQueryParser sparqlparser = new SparqlQueryParser();
@@ -49,6 +51,7 @@ namespace Cuisine.Controllers
             SparqlResultSet resultSet = (SparqlResultSet)process.ProcessQuery(query);
 
             dic = new Dictionary<string, string>();
+            dicMaterial = new Dictionary<string, string>();
 
             foreach (SparqlResult result in resultSet)
             {
@@ -56,6 +59,22 @@ namespace Cuisine.Controllers
                 ILiteralNode nodeTenKV = (ILiteralNode)result.Value("tenKV");
 
                 dic[nodeX.Uri.Fragment.Remove(0, 1)] = nodeTenKV.Value;
+            }
+
+            // Lay danh sach nguyen lieu
+            queryString.CommandText = "select * where {?x rdf:type cuisine:NguyenLieu ; cuisine:coTenNguyenLieu ?tnl} ORDER BY ?x";
+
+            sparqlparser = new SparqlQueryParser();
+            query = sparqlparser.ParseFromString(queryString);
+
+            resultSet = (SparqlResultSet)process.ProcessQuery(query);
+
+            foreach (SparqlResult result in resultSet)
+            {
+                IUriNode nodeX = (IUriNode)result.Value("x");
+                ILiteralNode nodeTenNL = (ILiteralNode)result.Value("tnl");
+
+                dicMaterial[nodeX.Uri.Fragment.Remove(0, 1)] = nodeTenNL.Value;
             }
         }
 
@@ -218,6 +237,66 @@ namespace Cuisine.Controllers
                 ViewBag.Message = "Yêu cầu xem chi tiết thông tin món ăn không hợp lệ!!!";
             }
 
+            return View();
+        }
+
+        public ActionResult Material()
+        {
+            
+
+            ViewBag.dicMaterial = dicMaterial;
+
+            return View();
+        }
+
+        [HttpPost]
+        public ActionResult SearchMaterial(string keyword, string chay)
+        {
+            List<Dish> listDish = new List<Dish>();
+
+            ViewBag.keyword = keyword;
+            ViewBag.dicMaterial = dicMaterial;
+
+            string comText = "select * where {?x rdf:type cuisine:MonAn ; cuisine:coTenMonAn ?ten ; cuisine:coMoTa ?mota ; cuisine:coAnh ?anh ; cuisine:laMonChay ?chay ; cuisine:coID ?id ; cuisine:coThanhPhan ?tp . ?tp cuisine:coNguyenLieu ?nl . FILTER(cuisine:"+keyword+" IN (?nl)) } ORDER BY ?ten";
+
+            if (!string.IsNullOrEmpty(chay) && chay == "true")
+                comText = "select * where {?x rdf:type cuisine:MonAn ; cuisine:coTenMonAn ?ten ; cuisine:coMoTa ?mota ; cuisine:coAnh ?anh ; cuisine:laMonChay ?chay ; cuisine:coID ?id ; cuisine:coThanhPhan ?tp . ?tp cuisine:coNguyenLieu ?nl . FILTER(cuisine:" + keyword + " IN (?nl) && ?chay = true) } ORDER BY ?ten";
+
+            queryString.CommandText = comText;
+
+            SparqlQueryParser sparqlparser = new SparqlQueryParser();
+            SparqlQuery query = sparqlparser.ParseFromString(queryString);
+
+            SparqlResultSet resultSet = (SparqlResultSet)process.ProcessQuery(query);
+
+            if (resultSet.Count > 0)
+            {
+                foreach (SparqlResult result in resultSet)
+                {
+                    IUriNode nodeX = (IUriNode)result.Value("x");
+                    ILiteralNode nodeName = (ILiteralNode)result.Value("ten");
+                    ILiteralNode nodeDesc = (ILiteralNode)result.Value("mota");
+                    ILiteralNode nodePicture = (ILiteralNode)result.Value("anh");
+                    ILiteralNode nodeChay = (ILiteralNode)result.Value("chay");
+                    ILiteralNode nodeID = (ILiteralNode)result.Value("id");
+
+                    Dish dish = new Dish();
+                    dish.Desc = nodeDesc.Value;
+                    dish.Uri = nodeX.Uri.Fragment.Remove(0, 1);
+                    dish.Name = nodeName.Value;
+                    dish.Picture = nodePicture.Value;
+                    dish.Chay = nodeChay.Value == "true";
+                    dish.Id = long.Parse(nodeID.Value);
+
+                    listDish.Add(dish);
+                }
+
+                ViewBag.searchResult = listDish;
+            }
+            else
+            {
+                ViewBag.Message = "Không tìm thấy món ăn nào, vui lòng thử lại với các nguyên liệu khác!";
+            }
             return View();
         }
     }

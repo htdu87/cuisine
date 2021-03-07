@@ -1,5 +1,5 @@
 ﻿@{
-    ViewBag.Title = "Tìm kiếm món ăn theo khu vực";
+    ViewBag.Title = "Tìm kiếm món ăn theo nguyên liệu";
     Layout = "~/Views/Shared/_LayoutCuisine.cshtml";
 }
 
@@ -103,23 +103,22 @@
 </div>
 <div style="position:absolute; left:0; top:0; width:100%; height:100%">
     <div class="container">
-        <form method="post" action="/search/search" style="margin-top:100px">
+        <form method="post" action="/search/SearchMaterial" style="margin-top:100px">
             <div class="form-group text-center">
                 <img src="~/Content/Images/cooking-logo-shadow.png" width="150" alt="Cooking logo" title="Cooking logo" />
             </div>
             <div class="form-group">
                 <input type="hidden" name="chay" value="false" id="txt-chay" />
                 <select name="keyword" class="form-control select2">
-                    @foreach (string key in ViewBag.dsKhuVuc.Keys)
+                    @foreach (string key in ViewBag.dicMaterial.Keys)
                     {
-                        <option value="@key">@ViewBag.dsKhuVuc[key]</option>
+                        <option value="@key">@ViewBag.dicMaterial[key]</option>
                     }
                 </select>
             </div>
             <div class="form-group text-center">
                 <button type="submit" class="btn btn-primary">&nbsp;&nbsp;&nbsp;Món ăn&nbsp;&nbsp;&nbsp;</button> &nbsp;&nbsp;
-                <button type="submit" class="btn btn-default" id="btn-chay-submit">Món chay</button> &nbsp;&nbsp;
-                <a href="Material" class="btn btn-success" role="button">Tìm theo nguyên liệu</a>
+                <button type="submit" class="btn btn-default" id="btn-chay-submit">Món chay</button>
             </div>
         </form>
     </div>

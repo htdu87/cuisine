@@ -229,6 +229,8 @@
     <Content Include="Views\Search\Index.cshtml" />
     <Content Include="Views\Search\Search.cshtml" />
     <Content Include="Views\Search\Detail.cshtml" />
+    <Content Include="Views\Search\Material.cshtml" />
+    <Content Include="Views\Search\SearchMaterial.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
